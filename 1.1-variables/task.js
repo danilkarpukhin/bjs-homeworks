@@ -19,10 +19,9 @@ function sayHello(userName) {
 	
     // реализуйте здесь задание №2
 	let = userName;
-	let message;
-	message = "Привет, мир! Меня зовут";
-	alert (message + userName );
-	return alert;  // ваш ответ;
+	
+	
+	return `Привет, мир! Меня зовут ${userName}`   // ваш ответ;
 }
 
 function calculateFormula() {
