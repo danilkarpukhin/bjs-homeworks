@@ -19,13 +19,15 @@ function getAverageMark(marks){
     if (marks.length > 5){
         marks = marks.slice(0, 5);
     } 
+
+    if (marks.length === 0) {
+      return 0;
+  }
     let averageMark = 0;
     for (let i = 0; i < marks.length; i++){
-        averageMark = averageMark + marks[i];
+        averageMark = averageMark + parseInt(marks[i]);
     } 
-    for (let i = 0; i = marks.length; i++){
-      averageMark = averageMark + marks[i];
-    }
+    
     
     
      return averageMark  / marks.length;
